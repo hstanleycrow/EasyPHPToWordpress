@@ -135,6 +135,13 @@ echo "</pre>";
 
 You can [download](https://github.com/hstanleycrow/EasyPHPToWordpress/) the latest version here.
 
+## PHP Versions
+I have tested this class only in this PHP versions. So, if you have an older version and do not work, let me know.
+| PHP Version |
+| ------------- |
+| PHP 8.0 | 
+| PHP 8.1 |
+| PHP 8.2 |
 
 ## Credits
 
