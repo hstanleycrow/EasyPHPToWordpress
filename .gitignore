@@ -1,0 +1,5 @@
+vendor
+docs
+.env
+composer.lock
+index.php
