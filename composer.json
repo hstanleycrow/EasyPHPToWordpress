@@ -1,0 +1,29 @@
+{
+    "name": "hcrow/easyphptowordpress",
+    "description": "Free PHP Library to post from PHP to Wordpress",
+    "version": "1.0.0",
+    "keywords": [
+        "wordpress",
+        "publish",
+        "php"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/hstanleycrow/EasyPHPToWordpress",
+    "authors": [
+        {
+            "name": "Harold Rivas AKA Harold Crow",
+            "email": "holamundo@microaplicaciones.com",
+            "homepage": "https://www.microaplicaciones.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "hcrow\\EasyPHPToWordpress\\": "src"
+        }
+    }
+}
