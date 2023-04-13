@@ -34,6 +34,9 @@
 ```bash
 # Clone this repository
 $ git clone https://github.com/hstanleycrow/EasyPHPToWordpress/
+
+# install libraries
+$ composer update
 ```
 
 ```php
