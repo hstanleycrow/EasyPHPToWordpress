@@ -1,7 +1,6 @@
 {
     "name": "hstanleycrow/easyphptowordpress",
     "description": "Free PHP Library to post from PHP to Wordpress",
-    "version": "1.0.0",
     "keywords": [
         "wordpress",
         "publish",

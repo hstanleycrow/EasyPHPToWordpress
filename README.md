@@ -37,6 +37,10 @@ $ git clone https://github.com/hstanleycrow/EasyPHPToWordpress/
 
 # install libraries
 $ composer update
+
+# or install using composer
+
+$ composer require hstanleycrow/easyphptowordpress
 ```
 
 ```php
