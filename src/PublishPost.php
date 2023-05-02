@@ -2,6 +2,8 @@
 
 namespace hcrow\EasyPHPToWordpress;
 
+use hstanleycrow\EasyPHPcURLRequest\CurlRequest;
+
 include_once('simple_html_dom.php');
 class PublishPost
 {
@@ -58,7 +60,7 @@ class PublishPost
     {
         return (in_array(strtolower($status), self::VALID_STATUS));
     }
-    public function publish(): mixed
+    public function publish(): string | bool
     {
         ini_set('user_agent', 'My-Application/2.5');
         $this->htmlContent->load($this->rawContent);
@@ -100,6 +102,7 @@ class PublishPost
             'slug' => $this->slug(),
         ]);
         $curlRequest = new CurlRequest($this->wordpressAPI->wordpressSiteURL() . self::POST_URL);
+        #$curlRequest = new CurlRequest($this->wordpressAPI->wordpressSiteURL() . self::POST_URL);
         $curlRequest->setPost(true);
         $curlRequest->setPostData($postData);
         $curlRequest->setHttpHeader([

@@ -2,6 +2,8 @@
 
 namespace hcrow\EasyPHPToWordpress;
 
+use hstanleycrow\EasyPHPcURLRequest\CurlRequest;
+
 abstract class AbstractWordpressList
 {
     private const LISTING_ERROR = 1;
@@ -50,7 +52,7 @@ abstract class AbstractWordpressList
                     }
                 }
                 $page++;
-            } catch (HttpRequestException $e) {
+            } catch (\Exception $e) {
             }
         }
         return $tags;

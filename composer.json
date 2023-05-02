@@ -1,5 +1,5 @@
 {
-    "name": "hcrow/easyphptowordpress",
+    "name": "hstanleycrow/easyphptowordpress",
     "description": "Free PHP Library to post from PHP to Wordpress",
     "version": "1.0.0",
     "keywords": [
@@ -19,7 +19,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "hstanleycrow/easyphpcurlrequest": "^1.0"
     },
     "autoload": {
         "psr-4": {

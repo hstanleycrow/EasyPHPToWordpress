@@ -33,13 +33,13 @@ class WordpressMediaValidator
                     if ($this->isValidWPMimeType()) :
                         return true;
                     else :
-                        throw new InvalidImageFormatException(self::ERROR_MESSAGES[self::INVALID_IMAGE_TYPE]);
+                        throw new \Exception(self::ERROR_MESSAGES[self::INVALID_IMAGE_TYPE]);
                     endif;
                 else :
-                    throw new InvalidImageFormatException(self::ERROR_MESSAGES[self::INVALID_IMAGE_TYPE]);
+                    throw new \Exception(self::ERROR_MESSAGES[self::INVALID_IMAGE_TYPE]);
                 endif;
             else :
-                throw new InvalidFileException(self::ERROR_MESSAGES[self::INVALID_FILE]);
+                throw new \Exception(self::ERROR_MESSAGES[self::INVALID_FILE]);
             endif;
         endif;
         return false;

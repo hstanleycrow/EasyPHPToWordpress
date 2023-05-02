@@ -2,6 +2,8 @@
 
 namespace hcrow\EasyPHPToWordpress;
 
+use hstanleycrow\EasyPHPcURLRequest\CurlRequest;
+
 class PublishMedia
 {
     private const PUBLISH_ERROR = 1;
